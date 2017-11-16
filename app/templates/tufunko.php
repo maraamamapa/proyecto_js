@@ -9,6 +9,7 @@ echo 'Controles:';
 echo 'Arriba:W Abajo:S Izquieda:A Derecha:D';
 echo 'para selecionar cual mover darle click en la cabeza o el Cuerpo';
 echo '</div>';
+
 echo'</div>';
 echo'<div class=" main row">';
 echo '<!-- Aqui estara metido el Funko que personalizemos -->';
