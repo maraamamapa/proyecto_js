@@ -1,0 +1,106 @@
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body{
+	background-image: url("../img/body.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 125%;
+	margin:0;
+	margin-bottom: 40px;
+}
+.imagen_funko{
+	width: :400px;
+	height: 200px;
+	background-image: url("../img/header_funkopop.jpg");
+	background-size: 100% 100%;
+}
+header {
+
+background-color: black;
+	color:#fff;
+}
+
+/*h6{
+	color:red;
+}*/
+
+.main {
+	background:#f2f2f2;
+}
+
+.color1 {
+	background: #34495e;
+	color:#fff;
+}
+
+aside {
+	background:#c0392b;
+	color:#fff;
+}
+
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+	margin-top: 10px;
+}
+
+/*Pagina tuFunko*/
+	/*Estos dos ID de acontinuacion seran los contenedores de la cabeza como el cuerpo*/
+	#idContenedorCuerpo{
+		background-color: rgb(42, 47, 46);
+		width: 300px;
+		height: 300px;
+		margin-bottom: 25px;
+
+	}
+	#idContenedorCabeza{
+		background-color: rgb(102, 214, 192);
+		width: 300px;
+		height: 200px;
+
+	}
+/**/
+#contenedorDeCabezas{
+	position: relative;
+	z-index: 0;
+
+}
+#contenedorDeCuerpo{
+	z-index: 0;
+
+
+}
+/**/
+#imagenCont{
+	width: 100px;
+	height: 100px;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#imagenContC{
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#prueba{
+display:none
+}
+
+
+
+/*FORMULARIO*/
+	#errores *{
+			color: red;
+			border-color: black;
+		}

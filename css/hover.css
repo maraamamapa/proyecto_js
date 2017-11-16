@@ -1,0 +1,13 @@
+div#imagen{
+    margin: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+
+}
+div#imagen:hover{
+	-moz-transform: scale(2,2);
+    -webkit-transform: scale(2,2);
+    transform: scale(1.25,1.25);
+}
