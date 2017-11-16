@@ -53,54 +53,72 @@ footer {
 /*Pagina tuFunko*/
 	/*Estos dos ID de acontinuacion seran los contenedores de la cabeza como el cuerpo*/
 	#idContenedorCuerpo{
-		background-color: rgb(42, 47, 46);
+		background-color: #b3b3b3;
 		width: 300px;
 		height: 300px;
 		margin-bottom: 25px;
-
+		-webkit-box-shadow: inset 0px -19px 29px 3px rgba(104,252,138,1);
+		-moz-box-shadow: inset 0px -19px 29px 3px rgba(104,252,138,1);
+		box-shadow: inset 0px -19px 29px 3px rgba(104,252,138,1);
 	}
 	#idContenedorCabeza{
-		background-color: rgb(102, 214, 192);
+		background-color: #b3b3b3;
 		width: 300px;
 		height: 200px;
-
+		-webkit-box-shadow: inset 0px 16px 29px 3px rgba(104,252,138,1);
+		-moz-box-shadow: inset 0px 16px 29px 3px rgba(104,252,138,1);
+		box-shadow: inset 0px 16px 29px 3px rgba(104,252,138,1);
 	}
 /**/
 #contenedorDeCabezas{
 	position: relative;
 	z-index: 0;
-
 }
 #contenedorDeCuerpo{
 	z-index: 0;
-
-
 }
 /**/
 #imagenCont{
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	z-index: 2;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 #imagenContC{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 #prueba{
-display:none
+	display:none;
+	background-color:#f2f2f2;
+	height: 90px;
+	padding: 5px;
+	-webkit-box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
+	-moz-box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
+	box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
+}
+.contenedor{
+	margin: 20px;
+	width: 90%;
+}
+.contenedor2{
+	background-color:#f2f2f2;
+	margin-top: 75px;
+	padding: 5px;
+	-webkit-box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
+	-moz-box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
+	box-shadow: inset 2px 1px 15px 2px rgba(231,225,225,1);
 }
 
 
-
 /*FORMULARIO*/
-	#errores *{
-			color: red;
-			border-color: black;
-		}
+#errores *{
+		color: red;
+		border-color: black;
+	}

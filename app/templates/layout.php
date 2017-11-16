@@ -7,7 +7,7 @@
   <!-- <link rel="stylesheet" href="../../css/master.css"> -->
   <link rel="stylesheet" href="../../css/Avanzada.css">
   <link rel="stylesheet" href="../../css/hover.css">
-
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAJwVqQAj8F5JC3QKiwvEfk9gYroKsTU7w &sensor=true"></script>
      </head>
 	    <body>
 		<header>
@@ -26,7 +26,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="productos.php">Tienda</a></li>
           <li><a href="tufunko.php">Tu Funko</a></li>
-          <li><a href="contacto.html">Direccion</a></li>
+          <li><a href="contacto.php">Contacto</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -39,14 +39,10 @@
 
     <section class="container">
 		    <section class="main row">
-			       <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			       <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
                <?php echo $contenido ?>
-
 			        </article>
-
-
 		    </section>
-
 	 </section>
    <br>
    <br>

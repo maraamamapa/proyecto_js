@@ -7,7 +7,7 @@
   <!-- <link rel="stylesheet" href="../../css/master.css"> -->
   <link rel="stylesheet" href="../../css/Avanzada.css">
   <link rel="stylesheet" href="../../css/hover.css">
-
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAJwVqQAj8F5JC3QKiwvEfk9gYroKsTU7w &sensor=true"></script>
   <script type="text/javascript">
 
 //-- navigator.geolocation sirve para saber si puede ir el mapa --\\
@@ -131,11 +131,10 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="productos.php">Tienda</a></li>
           <li><a href="tufunko.php">Tu Funko</a></li>
-          <li><a href="contacto.html">Direccion</a></li>
+          <li><a href="contacto.php">Contacto</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="formulario.php"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
         </ul>
 
       </div>
@@ -144,43 +143,38 @@
 
     <section class="container">
 		    <section class="main row">
-			       <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			       <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contenedor">
                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <form id="form" action="contacto.html" method="post">
-            <fieldset id="formContac">
-              <legend>Contacta Con nosotros</legend>
-                <label>Nombre: <input type="text" id="nombre" name="" value=""></label><br>
-                <label>Apellidos: <input type="text" id="apellidos" name="" value=""></label><br>
-                <label>Email: <input type="text" name="" id="email" value=""></label><br>
-                <label>Comentario:  </label><br><textarea name="name" rows="5" cols="50"></textarea><br>
-                <label><input type="button" onclick="validarDatos();" name="" value="Enviar"></label>
-            </fieldset>
-            <div id="errores"></div>
-            </form>
-          </div>
+                  <form id="form"  method="post">
 
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <fieldset>
-              <legend>Donde encontrarnos</legend>
-              <p> La Marina de València, Muelle de la Aduana s/n <br>
-                   Edificio Lanzadera <br>
-                  46024 Valencia <br>
-                  España.
-                </p>
-                <div id="contenedor"></div>
-            </fieldset>
-          </div>
+                      <fieldset id="formContac">
+                        <legend ><p style="position:relative; left:75px; ">Contacta Con nosotros</p></legend>
+                          <label>Nombre: <input type="text" id="nombre" name="" value=""></label><br>
+                          <label>Apellidos: <input type="text" id="apellidos" name="" value=""></label><br>
+                          <label>Email: <input type="text" name="" id="email" value=""></label><br>
+                          <label>Comentario:  </label><br><textarea name="name" rows="5" cols="50"></textarea><br>
+                          <label><input type="button" onclick="validarDatos();" class="btn btn-info" value="Enviar"></label>
+                      </fieldset>
 
+                      <div id="errores" class="contenedor2" style="position:relative; top:-350px; left:300px; width:170px;"></div>
+                    </form>
+                  </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <fieldset>
+                    <legend>Donde encontrarnos</legend>
+                    <p> La Marina de València, Muelle de la Aduana s/n <br>
+                         Edificio Lanzadera <br>
+                        46024 Valencia <br>
+                        España.
+                      </p>
+                      <div id="contenedor"></div>
+                  </fieldset>
+                </div>
 			        </article>
-
-
 		    </section>
-
 	 </section>
-   <br>
-   <br>
-   <br>
-   <br>
+
 <!-- Footer con el JSON -->
 	<footer>
 		<div class="container">
