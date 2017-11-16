@@ -1,7 +1,7 @@
-var KeyUp = 119;
-var KeyDown = 115;
-var KeyLeft = 97;
-var KeyRight = 100;
+var KeyUp = 119;/*W*/
+var KeyDown = 115;/*S*/
+var KeyLeft = 97;/*A*/
+var KeyRight = 100;/*D*/
 
 var idCAS;
 /*En el momento que llame a la funcion custom (Event)*/
@@ -17,6 +17,7 @@ setTimeout(function(){ document.dispatchEvent(eventoImprimir);}, 6000);/*A los 6
 window.onload = function(){/*cuando se recargue la pantalla, recarga lo que dentro*/
 document.onkeypress = funcion;/*todas las funciones de onkeypress funcionen*/
 }
+
 function funcion(evento){/*funcion predefinida que detecta algun evento-es para onkeypress*/
     var contenedor =  document.getElementById(idCAS);/*el cuerpo o la cara ultima que presiones se convierte en esta segun la funcion presionar*/
       if (evento.keyCode==KeyUp) {/*keycode es segun la letra que presiones*/
@@ -24,11 +25,13 @@ function funcion(evento){/*funcion predefinida que detecta algun evento-es para 
         var actual = contenedor.offsetTop;/*gardamos a posicion actual*/
         var nuevo = actual - 5;/*le restamos los pixeles que se va a mover*/
         contenedor.style.top = nuevo + 'px';/*incorpora los nuevos pixeles tras el movimiento de la imagen*/
-        }
+      }
       }else if (evento.keyCode==KeyDown) {
+        if (contenedor.offsetTop < (300-150)) {
         var actual = contenedor.offsetTop;
         var nuevo = actual + 5;
         contenedor.style.top = nuevo + 'px';
+        }
       }else if (evento.keyCode==KeyLeft) {
         if (contenedor.offsetLeft > 0) {
         var actual = contenedor.offsetLeft;
@@ -36,7 +39,7 @@ function funcion(evento){/*funcion predefinida que detecta algun evento-es para 
         contenedor.style.left = nuevo + 'px';
       }
       }else if (evento.keyCode==KeyRight) {
-        if (contenedor.offsetLeft < (300-100)) {
+        if (contenedor.offsetLeft < (300-200)) {
         var actual = contenedor.offsetLeft;
         var nuevo = actual + 5;
         contenedor.style.left = nuevo + 'px';
@@ -44,7 +47,7 @@ function funcion(evento){/*funcion predefinida que detecta algun evento-es para 
       }
     }
 function aprietaCabeza(numero) {
-var contendor =document.getElementById('idContenedorCabeza');
+
 var imagen;
 var src;
 var imagenCont;
@@ -62,7 +65,7 @@ imagenCont.src=src;
 
 }
 function aprietaCuerpo(numero) {
-var contendor =document.getElementById('idContenedorCabeza');
+
 var imagen;
 var src;
 var imagenCont;
